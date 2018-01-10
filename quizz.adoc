@@ -6,7 +6,6 @@
 
 Devops est avant tout une culture d'entreprise dans laquelle les développeurs et les opérateurs systèmes travaillent en collaboration. Il s'agit d'une envie partant de problèmes de communications et du manque de transparence entre les deux professions. Le devops utilise une plateforme d'intégration continue, ce qui implique avant chaque rendu de passer toutes les modifications de code par des builds, tests automatisés avant la mise en production. Plusieurs outils sont alors utilisés, avec Gitlab pour de l'intégration continue.
 
-+
 image:http://www.group-dis.com/wp-content/uploads/2017/11/devops-process.png[alt="schema devops.",width=640]
 
 
@@ -50,8 +49,7 @@ L'intégration continue permet de build automatiquement le code ajouté par les 
 ** http://tutsplus.s3.amazonaws.com/tutspremium/courses_$folder$/Git-Essentials/quiz/index.html
 ** votre score : 86%
 
-+
-image:https://imgur.com/a/MkQQ2[alt="schema devops.",width=640]
+image:https://i.imgur.com/8gzuAsx.jpg[alt="schema devops.",width=640]
 
 
 === Docker
