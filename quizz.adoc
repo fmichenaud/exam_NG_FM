@@ -1,90 +1,102 @@
-== "Exam"
-
-__Réponder directement aux question dans le ficher + commit avec votre trigrame de binôme.__
-
-__Exemple : exam_BDE_ABC.adoc__
-
-*Votre binôme :*
+*Votre binôme : Nicolas Gras*
 
 === Intro - Devops
 
 * Qu'est-ce que devops (15 minutes) ?
 
+Devops est avant tout une culture d'entreprise dans laquelle les développeurs et les opérateurs systèmes travaillent en collaboration. Il s'agit d'une envie partant de problèmes de communications et du manque de transparence entre les deux professions. Le devops utilise une plateforme d'intégration continue, ce qui implique avant chaque rendu de passer toutes les modifications de code par des builds, tests automatisés avant la mise en production. Plusieurs outils sont alors utilisés, avec Gitlab pour de l'intégration continue.
+
++
+image:http://www.group-dis.com/wp-content/uploads/2017/11/devops-process.png[alt="schema devops.",width=640]
+
+
 * Qu'est-ce qu'un VSM (1 phrase). Pourquoi est-il utile ?
+
+Un VSM est un outil permettant de représenter le flux de création de valeur d'une entreprise.
+Il sert à avoir un point de vue global de l'état de l'entreprise à un instant T.
 
 * Citer 3 bonnes pratiques ou découvertes dans le lego4devops ?
 
+La communication entre le développeur et l'opérateur système.
+Le continuous delivery - Le fait de livrer à chaque nouvelle fonctionnalitée du projet
+Le fait de travailler dans le même espace.
+
 * Citer 5 principes de l'intégration continue et expliquer les gains apportés.
+
+Automatiser la livraison (Gain de temps et augmentation de la fréquence de livraison)
+Tests automatiques à chaque push d'un développeur
+Eviter les bugs lors de la mise en production
+Le travail en équipe, qui permet l'uniformisation des versions entre les collaborateurs
+Permettre la possibilité de revenir à une version précédente 'stable' du projet en cas de soucis
 
 * C'est quoi un pipeline de delivery ?
 
+Un pipeline de delivery permet de faire passer chaque push par des tests, builds et mise en production automatique une fois que le projet a été entièrement validé.
+
 * Qu'est-ce qu'une PIC ? Son utilité ?
+
+Une plateforme d'intégration continue représente toute l'architecture de la mise en production d'un projet. Cela permet de livrer de manière plus fréquente le projet
 
 * Quelle est la différence entre :
 ** Continuous Integration
 ** Continuous Delivery
 ** Continuous Deployment
 
+L'intégration continue permet de build automatiquement le code ajouté par les collaborateurs, et de l'ajouter au projet par la suite, tandis que la livraison continue représente l'automatisation de la livraison du projet vers le client. Le déploiement continue permet de compléter l'intégration continue en vérifiant le build, et en l'ajoutant par la suite en production.
+
 === GIT
 
 * Git quizz
 ** http://tutsplus.s3.amazonaws.com/tutspremium/courses_$folder$/Git-Essentials/quiz/index.html
-** votre score :
+** votre score : 86%
+
++
+image:https://imgur.com/a/MkQQ2[alt="schema devops.",width=640]
+
 
 === Docker
 
 * Quelle sont les différences/avantages/inconvénients entre un conteneur et une machine virtuelle ?
 
+Une machine virtuelle va simuler tout un système d'exploitation tandis qu'un conteneur ne va qu'exécuter uniquement les services demandés, et va donc créer l'environnement de travail que l'on a choisi.
+Cela permet une vitesse d'exécution et un workflow plus léger. 
+
 * C'est quoi Docker ?
+
+Docker est un outil permettant de créer des conteneurs associés à des images.
 
 * Différence entre une image et une instance docker ?
 
+Une image représente un 'Dockerfile', du code qui va, une fois exécuté, donner une instance de Docker (une image associé à un conteneur).
+
 * Dans un conteneur, le noyau de l’OS est :
-** Celui du système hôte
-** Celui qui est installé dans le conteneur
-** Celui qui est installé dans la première couche du conteneur
 ** Celui du système qui exécute la commande
 
 * Une machine virtuelle contient un ensemble d'applications, de librairies, un OS complet, ce qui résulte souvent en des fichiers de plusieurs GB :
 ** Vrai
-** Faux
 
-* ________ est un service mis à disposition par Docker permettant d'utiliser un registry Docker privé ou plubic :
-** Docker Swarn
-** Docker Hub
-** Docker Cloud
-** Docker Compose
+* Docker Hub est un service mis à disposition par Docker permettant d'utiliser un registry Docker privé ou public
 
-* ________ est un outil permettant de définir et exécuter une application multi-conteneurs
-** Docker Swarn
-** Docker Hub
-** Docker Cloud
-** Docker Compose
+* Docker Compose est un outil permettant de définir et exécuter une application multi-conteneurs
 
-* ________ est un gestionnaire de cluster docker. Il permet de controller un pool d'hôtes Docker en un unique hôte virtuel Docker.
-** Docker Swarn
-** Docker Hub
-** Docker Cloud
-** Docker Compose
+* Docker Swarn est un gestionnaire de cluster docker. Il permet de controller un pool d'hôtes Docker en un unique hôte virtuel Docker.
 
 * L’hôte de conteneurs peut être :
-** Une machine physique
-** Une machine physique ou virtuelle
 ** Une machine physique ou virtuelle ou un conteneur
 
 * Pour instancier et exécuter un nouveau conteneur Docker, on utilise la commande :
-** docker start
-** docker pull
 ** docker run
 
 * Le référentiel public d’images Docker est :
-** GitHub
 ** Docker Hub
-** Docker Trusted Registry
-** Azure MarketPlace
 
 * Expliquer la commande "docker run -p 8080:80 --name mynginx -d nginx"
+
+Cette commande va créer un conteneur et intégrer l'image 'nginx' à l'intérieur, on lui donne le nom 'mynginx' et on bind le port 8080 sur le port 80.
 
 === Vos projets
 
 * Quelles sont les éléments/concepts/technologies/idées que vous allez mettre en place dans vos projets.
+
+ReactNative
+ElasticSearch + Kibana
