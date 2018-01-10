@@ -1,0 +1,90 @@
+== "Exam"
+
+__Réponder directement aux question dans le ficher + commit avec votre trigrame de binôme.__
+
+__Exemple : exam_BDE_ABC.adoc__
+
+*Votre binôme :*
+
+=== Intro - Devops
+
+* Qu'est-ce que devops (15 minutes) ?
+
+* Qu'est-ce qu'un VSM (1 phrase). Pourquoi est-il utile ?
+
+* Citer 3 bonnes pratiques ou découvertes dans le lego4devops ?
+
+* Citer 5 principes de l'intégration continue et expliquer les gains apportés.
+
+* C'est quoi un pipeline de delivery ?
+
+* Qu'est-ce qu'une PIC ? Son utilité ?
+
+* Quelle est la différence entre :
+** Continuous Integration
+** Continuous Delivery
+** Continuous Deployment
+
+=== GIT
+
+* Git quizz
+** http://tutsplus.s3.amazonaws.com/tutspremium/courses_$folder$/Git-Essentials/quiz/index.html
+** votre score :
+
+=== Docker
+
+* Quelle sont les différences/avantages/inconvénients entre un conteneur et une machine virtuelle ?
+
+* C'est quoi Docker ?
+
+* Différence entre une image et une instance docker ?
+
+* Dans un conteneur, le noyau de l’OS est :
+** Celui du système hôte
+** Celui qui est installé dans le conteneur
+** Celui qui est installé dans la première couche du conteneur
+** Celui du système qui exécute la commande
+
+* Une machine virtuelle contient un ensemble d'applications, de librairies, un OS complet, ce qui résulte souvent en des fichiers de plusieurs GB :
+** Vrai
+** Faux
+
+* ________ est un service mis à disposition par Docker permettant d'utiliser un registry Docker privé ou plubic :
+** Docker Swarn
+** Docker Hub
+** Docker Cloud
+** Docker Compose
+
+* ________ est un outil permettant de définir et exécuter une application multi-conteneurs
+** Docker Swarn
+** Docker Hub
+** Docker Cloud
+** Docker Compose
+
+* ________ est un gestionnaire de cluster docker. Il permet de controller un pool d'hôtes Docker en un unique hôte virtuel Docker.
+** Docker Swarn
+** Docker Hub
+** Docker Cloud
+** Docker Compose
+
+* L’hôte de conteneurs peut être :
+** Une machine physique
+** Une machine physique ou virtuelle
+** Une machine physique ou virtuelle ou un conteneur
+
+* Pour instancier et exécuter un nouveau conteneur Docker, on utilise la commande :
+** docker start
+** docker pull
+** docker run
+
+* Le référentiel public d’images Docker est :
+** GitHub
+** Docker Hub
+** Docker Trusted Registry
+** Azure MarketPlace
+
+* Expliquer la commande "docker run -p 8080:80 --name mynginx -d nginx"
+
+=== Vos projets
+
+* Quelles sont les éléments/concepts/technologies/idées que vous allez mettre en place dans vos projets.
